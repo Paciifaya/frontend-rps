@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background: hsl(237, 48.6%, 14.5%);
+    background-image: radial-gradient(hsl(214, 47.5%, 23.1%), hsl(237, 48.6%, 14.5%));
+}
+
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25%;
+    padding: 25px;
+    border: 3px solid hsla(100, 100%, 100%, 0.29);
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+}
+
+.score-box {
+    background: hsl(0, 0%, 95.3%);
+    padding: 25px;
+    width: 125px;
+    border-radius: 10px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#score-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(229, 64.4%, 46.3%);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#score-count {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: hsl(246, 10.6%, 36.9%);
+}
+
+#triangle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-around;
+    background: url(images/bg-triangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 75px;
+    cursor: pointer;
+}
+
+#triangle :hover {
+    transform: translate3d(0px, -8px, 0px);
+}
+
+.contest {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+
+.contest img {
+    width: 275px;
+    height: 275px;
+}
+
+.contest h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+.referee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.referee h1 {
+    font-size: 45px;
+}
+
+.newgame {
+    color: hsl(229, 24.8%, 30.8%);
+    background: white;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 15px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.newgame:hover {
+    color: red;
+    transform: translate3d(0px, -2px, 0px);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+    padding: 10px;
+}
+
+.rules {
+    color: white;
+    background-color: hsl(237, 48.6%, 14.5%);
+    border: 2px solid white;
+    width: 100px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.rules:hover {
+    color: black;
+    background-color: white;
+}
+
+.modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.modal-content {
+    background: white;
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#rules-title {
+    color: hsl(229, 24.8%, 30.8%);
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        height: 100%;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    #container-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 15px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #container-1 img {
+        width: 90px;
+    }
+    .score-box {
+        background: hsl(0, 0%, 95.3%);
+        border: 2px solid white;
+        padding: 25px;
+        border-radius: 10px;
+    }
+    #score-label {
+        font-size: 12px;
+        font-weight: 900;
+    }
+    #score-count {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 900;
+    }
+    #triangle {
+        width: 350px;
+        background-size: 135px;
+    }
+    #triangle img {
+        width: 150px;
+    }
+    .contest {
+        display: none;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 0px;
+    }
+    .contest img {
+        width: 150px;
+        height: 150px;
+    }
+    .referee {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 300px;
+    }
+    .referee h1 {
+        font-size: 25px;
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    .modal {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .modal-image {
+        width: 200px;
+    }
+    .modal-content {
+        background: white;
+        width: 350px;
+        height: 250px;
+    }
+}
